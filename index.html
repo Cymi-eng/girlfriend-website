@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Girlfriend's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Love Emojis and Smiley Emojis floating in the background -->
+    <!-- Love Emojis -->
+    <div class="heart-emoji" style="top: 10%; left: 5%;">❤️</div>
+    <div class="heart-emoji" style="top: 20%; left: 15%;">❤️</div>
+    <div class="heart-emoji" style="top: 30%; left: 25%;">❤️</div>
+    <div class="heart-emoji" style="top: 40%; left: 35%;">❤️</div>
+    <div class="heart-emoji" style="top: 50%; left: 45%;">❤️</div>
+    <div class="heart-emoji" style="top: 60%; left: 55%;">❤️</div>
+    <div class="heart-emoji" style="top: 70%; left: 65%;">❤️</div>
+    <div class="heart-emoji" style="top: 80%; left: 75%;">❤️</div>
+    <div class="heart-emoji" style="top: 90%; left: 85%;">❤️</div>
+
+    <!-- Smiley Emojis -->
+    <div class="heart-emoji" style="top: 15%; left: 10%;">🙂</div>
+    <div class="heart-emoji" style="top: 25%; left: 20%;">🙂</div>
+    <div class="heart-emoji" style="top: 35%; left: 30%;">🙂</div>
+    <div class="heart-emoji" style="top: 45%; left: 40%;">🙂</div>
+    <div class="heart-emoji" style="top: 55%; left: 50%;">🙂</div>
+    <div class="heart-emoji" style="top: 65%; left: 60%;">🙂</div>
+    <div class="heart-emoji" style="top: 75%; left: 70%;">🙂</div>
+    <div class="heart-emoji" style="top: 85%; left: 80%;">🙂</div>
+    <div class="heart-emoji" style="top: 95%; left: 90%;">🙂</div>
+
+    <!-- Repeat more emojis for a total of 100 -->
+    <!-- You can copy and paste this section to add more emojis! -->
+
+    <h1>Welcome to My Girlfriend's Special Page</h1>
+    <p>This page is dedicated to the love of my life. ❤️</p>
+    
+    <button class="button" onclick="showSurprise()">Click Here for a Surprise</button>
+    
+    <div id="heart-container" class="hidden">
+        <div class="heart">&#10084;</div>
+        <div class="heart">&#10084;</div>
+        <div class="heart">&#10084;</div>
+    </div>
+    
+    <footer>
+        © 2024 My Girlfriend's Website. All rights reserved.
+    </footer>
+
+    <script>
+        function showSurprise() {
+            // Display hearts when button is clicked
+            document.getElementById('heart-container').classList.remove('hidden');
+            
+            // Add a special message to the button
+            const button = document.querySelector('.button');
+            button.textContent = "I love you forever! ❤️";
+            
+            // Animate hearts
+            const hearts = document.querySelectorAll('.heart');
+            hearts.forEach(heart => {
+                heart.classList.add('heart-animation');
+            });
+        }
+    </script>
+</body>
+</html>

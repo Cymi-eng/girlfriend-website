@@ -1,0 +1,92 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9e1f7;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Love emoji background */
+@keyframes float-hearts {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+    }
+}
+
+.heart-emoji {
+    position: absolute;
+    font-size: 3em;
+    animation: float-hearts 10s infinite linear;
+    opacity: 0.8;
+    pointer-events: none; /* Makes sure the emojis don’t interfere with other elements */
+}
+
+.heart-emoji:nth-child(odd) {
+    animation-duration: 8s;
+    font-size: 4em;
+}
+
+.heart-emoji:nth-child(even) {
+    animation-duration: 12s;
+    font-size: 3.5em;
+}
+
+/* Header and button styles */
+h1 {
+    color: #e91e63;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #c2185b;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Heart animation */
+#heart-container {
+    margin-top: 30px;
+}
+
+.heart {
+    font-size: 50px;
+    color: red;
+    display: inline-block;
+    opacity: 0;
+}
+
+.heart-animation {
+    animation: heart-beat 1s infinite;
+    opacity: 1;
+}
+
+@keyframes heart-beat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
